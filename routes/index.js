@@ -30,5 +30,4 @@ router.get('/arts/:id/delete', Controller.deletebyId);
 
 
 
-
 module.exports = router
