@@ -11,9 +11,6 @@ module.exports = {
       name: {
         type: Sequelize.STRING
       },
-      profielId: {
-        type: Sequelize.INTEGER
-      },
       date: {
         type: Sequelize.DATE
       },

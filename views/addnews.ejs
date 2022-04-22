@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Add Post</title>
+</head>
+<body>
+    <nav class="navigation bg-light">
+        <a href="/" class="navbar-brand">
+            <span class="">MY SOCIAL</span>
+        </a>
+        <a href="/arts/add">
+           <button class="btn btn-primary"> Add Post</button>
+        </a>
+    </nav>
+    <h2 class="mt-2 mb-2 mx-auto d-flex justify-content-center">Add New Post </h2>
+    <div class="container">
+        <form method="post" action="/arts/add">
+            <div class="form-group  d-flex mb-3">
+                <div class="name-container">
+                    <label for="exampleFormControlInput1">Name</label>
+                    <input type="text" class="form-control name" id="name" name="name">
+                </div>
+                <div class="name-container">
+                    <label for="exampleFormControlInput1">Last Name</label>
+                    <input type="text" class="form-control name" id="artist" name="artist">
+                </div>
+            </div>
+            <div class="form-group mb-3">
+                <label for="exampleFormControlInput1">Created Date</label>
+                <input type="date" class="form-control" id="date" name="date">
+            </div>
+            <div class="form-group mb-3">
+                <label for="exampleFormControlInput1">Photo URL</label>
+                <input type="text" class="form-control" id="photo" name="photo">
+            </div>
+            <div class="form-group mb-3">
+                <label for="exampleFormControlInput1">Origin</label>
+                <input type="text" class="form-control" id="placeOfOrigin" name="placeOfOrigin">
+            </div>
+            <div class="form-group mb-3">
+                <label for="exampleFormControlTextarea1">Description</label>
+                <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
